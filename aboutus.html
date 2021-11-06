@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/design.css">
+    <script type="text/javascript" src="file.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Images/favicon_logo.jpeg" type="image/x-icon">  
+    <title>Gamermerch</title>
+    <style>
+        #team {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #803bec;
+        color: #fff;
+    }
+    #team h2 {
+        position: relative;
+        padding: 0px 0px 15px;
+    }
+    #team p {
+        font-size: 15px;
+        font-style: italic;
+        padding: 0px;
+        margin: 25px 0px 40px;
+    }
+    #team h2::after {
+        content: '';
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 90px;
+        margin: 0 auto;
+        display: block;
+    }
+    .member {
+        margin-bottom: 20px;
+        margin-left: 54px;
+        position: relative;
+        overflow: hidden;
+        background-color:black;
+        padding: 2px;
+        border-radius: 20px 0px 20px 0px;
+        box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+    }
+    .member:hover
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .member .member-info {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: -200px;
+        transition: 0.4s;
+        padding: 15px 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .member:hover .member-info {
+        left: 0px;
+        right: 0px;
+    }
+    .member h4 {
+        font-weight: 700;
+        margin-bottom: 2px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .member span {
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+    }
+    .member .social-links {
+        margin-top: 15px;
+    }
+    .member .social-links a {
+        transition: none;
+        color: #fff;
+    }
+    .member .social-links a:hover {
+        color: yellow;
+    }
+    .member .social-links i {
+        font-size: 18px;
+        margin: 0 2px;
+    }
+    .img-fluid
+    {
+        width: 100%;
+        border: none;
+        height: 250px;
+    }
+    .bkg2
+    {
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <div class="w3-top w3-row w3-bar nav ">
+        <div class="w3-col m4 s8" >
+            <img src="Images/logoagain.png" alt="not supported" class="nm1" width="40%" style="margin-left: 2vw;">
+        </div>
+        <div class="w3-col m8 s4">
+            <a href="index.html" class="w3-bar-item w3-btn w3-hide-small menu" style="margin-left: 24vw">Home</a>
+            <a href="#" class="w3-bar-item w3-btn w3-hide-small menu">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-btn w3-hide-small menu">Contact Us</a>
+            <a href="signin.html" class="w3-bar-item w3-btn w3-hide-small menu">Sign in</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-margin-bottom w3-hide-large w3-hide-medium w3-hover-black" onclick="myMenu()"><i class='fas fa-bars iw0'></i></a>
+        </div>
+        <div id="phone" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+            <a href="signin.html" class="w3-bar-item w3-button">Sign in</a>
+          </div>
+    </div>
+    <!--Navigation Ending-->
+    <header class="w3-row w3-display-container bkg2">
+        <img src="Images/b4.jpg" alt="" width="100%" height="300px" style="margin-top: 10vh;">
+    </header>   
+    <div style="padding-top: 30px; padding-bottom: 30px; text-align: center;">
+        <h1 style="text-align: center; font-size: 40px;font-weight: 900;text-decoration: underline;">About US</h1>
+        <p class="about_text">"Welcome to Gamermerch, your number one source for all things. We're dedicated to giving you the very best of product, with a focus on easy to buy, security and privacy, any time any 
+            where.Gamermerch is a Professional gaming club, gaming products <br> Platform. <br> we will provide you only interesting content, which you will like very much.
+            We're dedicated to providing you the best of gaming club, gaming products, with a focus on dependability and Gaming .
+            Founded in 2020 by Mr. Peterson, Gamermerch has come a long way from its beginnings in <br>Australia.<br> When Peterson first started out, his passion for gaming drove them to quit day job, do tons of 
+            research, etc. So that Gamermerch can offer you best products and services. We now serve customers all over country and are thrilled that we're able to turn our passion into our own <br>website.<br>
+            we hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us."
+            </p>
+    </div>
+    <!-- Our Team -->
+    <section id="team">
+        <div class="w3-container" style="width: 98%; ">
+            <div class="w3-row w3-justify-content-center">
+                <div class="w3-col m12">
+                    <h1 style="text-align: center; font-size: xx-large;font-weight: 900;text-decoration: underline;">Our Team</h1>
+                    <h6 class="about_text">The individuals behind Gamermerch are devoted business people with different encounters inside exchanging, commercial centers, item improvement, and obviously with a lot of energy for gaming overall. 
+                        A large portion of us are guardians with kids who are gaming also.</h6>                
+                 </div>
+            </div>
+            <div class="w3-row" style=" margin-left: auto;">
+                <div class="w3-col m3 s10">
+                    <div class="member">
+                      <div class="member-img">
+                          <img src="Images/mem1.jpg" class="img-fluid" alt="">
+                      </div>
+                        <div class="member-info">
+                            <h4>Babette V</h4>
+                            <span>Sr. Developer</span>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col m3 s10 ">
+                    <div class="member">
+                      <div class="member-img">
+                          <img src="Images/mem2.jpg" class="img-fluid" alt="">
+                      </div>
+                        <div class="member-info">
+                            <h4>Chadwick S</h4>
+                            <span>Web Developer</span>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col m3 s10 ">
+                    <div class="member">
+                      <div class="member-img">
+                          <img src="Images/mem3.jpg" class="img-fluid" alt="">
+                      </div>
+                        <div class="member-info">
+                            <h4>Ciel l.</h4>
+                            <span>Designer Head</span>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col m3 s10 ">
+                    <div class="member">
+                      <div class="member-img">
+                          <img src="Images/mem4.jpg" class="img-fluid" alt="">
+                      </div>
+                        <div class="member-info">
+                            <h4>Cissy B</h4>
+                            <span>Marketing Head</span>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="foot">
+        <div class="iw5">
+            <a href="#" class="brand_icon"><img src="Images/f.png" alt="not_supported"></a>
+            <a href="#" class="brand_icon"><img src="Images/w.png" alt="not_supported"></a>
+            <a href="#" class="brand_icon"><img src="Images/i.png" alt="not_supported"></a>
+            <a href="#" class="brand_icon"><img src="Images/t.png" alt="not_supported"></a>
+        </div>
+
+        <div class="w3-bar iw6" >
+            <a href="#" class="w3-bar-item w3-btn brand_icon2" >About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-btn brand_icon2">Contact Us</a>
+            <a href="signin.html" class="w3-bar-item w3-btn brand_icon2">Sign in</a>
+            <a href="#" class="w3-bar-item w3-btn brand_icon2">FAQ</a>
+            <a href="#" class="w3-bar-item w3-btn brand_icon2">Terms</a>
+        </div>
+
+        <div>
+            <p  class="iw7" style="text-align: center;margin-top: 50px;">Copyright © 2021 - Gamermerch. All rights reserved</p>
+        </div>
+    </footer>	
+</body>
+</html>
